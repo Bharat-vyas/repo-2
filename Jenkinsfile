@@ -25,7 +25,7 @@ node {
       // For SSH into remote host we can use Snippet Generator "SSHAgent: SSH Agent" but for that we have to install SSH Agent plugin
       // Then click on Add --> now we can add the credentials either password based or key based as we want or as we are provided with  
       sshagent(['70879577-c865-415b-b4cb-0c6e86882477']) { //here we use username as root and password as ec.....t
-      sh 'ssh root@68.183.92.169'
+      sh 'ssh -t -t root@68.183.92.169'
       sh 'docker pull bharatvyas/image1'
       }
       }
